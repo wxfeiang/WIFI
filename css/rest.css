@@ -164,6 +164,8 @@ img {
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
 
 }
 
