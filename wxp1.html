@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <div id="zdrqgk" style="width: 400px; height: 220px; background:#000;;"></div>
+
+</body>
+<script src="js/jQuery-3.3.1.js"></script>
+<script src="js/echarts.min.js"></script>
+<script>
+    var zdrqgkChart = echarts.init(document.getElementById("zdrqgk"));
+    var zdrqgk_option = {
+        color: ['#fe5578', '#ff7200', '#fff600', '#59bcfb', '#59fbee', '#dc2323', '#9555fe', '#f074ff'],
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}-({c}人)"
+        },
+        series: [{
+            name: '重点人群管控',
+            type: 'pie',
+            radius: [30, 80],
+            center: ['50%', 120],
+            roseType: 'area',
+            x: '30%', // for funnel
+            max: 30, // for funnel
+            sort: 'ascending',
+            data: [{
+                    value: 1,
+                    name: '社区矫正:' + 1
+                },
+                {
+                    value: 1,
+                    name: '吸毒:' + 1
+                },
+                {
+                    value: 1,
+                    name: '邪教:' + 11
+                },
+                {
+                    value: 6261,
+                    name: '精神障碍:' + 1
+                },
+                {
+                    value: 5651,
+                    name: '涉法涉诉:' + 1
+                },
+                {
+                    value: 514651,
+                    name: '信访:' + 625
+                },
+                {
+                    value: 551,
+                    name: '刑满释放:' + 6265
+                },
+                {
+                    value: 5651,
+                    name: '危险品从业:' + 44
+                }
+            ]
+        }]
+    };
+    zdrqgkChart.setOption(zdrqgk_option);
+</script>
+
+</html>
