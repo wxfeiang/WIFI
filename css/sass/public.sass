@@ -6,7 +6,7 @@
     height: 100% 
     top: 0 
     left: 0 
-    z-index: -1 
+    z-index: -10
 body
     color: #fff
     background: #000225
@@ -16,12 +16,15 @@ body
     font-family: MicrosoftYaHei  
     font-weight: 400  
     color: rgba(0,120,255,1)  
-    line-height: 38px 
-
+    line-height: 60px 
+    
     background: linear-gradient(0deg,rgba(98,221,255,1)0%, rgba(202,252,255,1) 100%)  
     -webkit-background-clip: text  
     -webkit-text-fill-color: transparent  
 .header
+    background: url(../images/header_bg.png) no-repeat center center
+    //background: linear-gradient(0deg,rgba(0,116,245,0.7) 0%,rgba(0,116,245,0) 100%)
+    padding: 17px 0 0 0 
     .header-left
         width: 33.5%
         margin:  0 0 0 5%
@@ -131,8 +134,41 @@ body
         .main-right
             .area
                 @extend .bg-opcity
+                .area_box
+                    padding: 0 0 0 20px
+                    h3
+                        
+                    .area-map
+                        width: 100%
+                        height: 300px
+
 
             
+.nav
+    position: fixed
+    left: 2% 
+    top: 5%
+    z-index: 10
+    .nav-icon
+        width: 34px
+        height: 28px
+        background: url(../images/nav.png) no-repeat 
+        cursor: pointer
+    .nav-list
+        display: none
+        padding: 10px
+        width: 120px
+        background: #00082c
+        li  
+            a
+                display: inline-block
+                line-height: 26px
+                color: #1890ff
+                &:hover
+                    color: #fff
+
+            
+
 
 
             

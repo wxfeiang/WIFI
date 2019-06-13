@@ -4,13 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>管理员个人信息分析</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
     <link rel="stylesheet" href="css/rest.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/admin_msg.css">
 </head>
 
 <body>
+
     <canvas id="space"></canvas>
+
+    <!-- nav -->
+    <div class="nav">
+        <div class="nav-icon" id="nav_icon"></div>
+        <ul class="nav-list">
+            <li><a href="">大数据运算</a></li>
+            <li><a href="">大数据运算</a></li>
+            <li><a href="">大数据运算</a></li>
+            <li><a href="">大数据运算</a></li>
+            <li><a href="">大数据运算</a></li>
+        </ul>
+    </div>
+
     <!-- header -->
     <div class="clearfix header">
         <div class="clearfix fl header-left">
@@ -39,8 +54,8 @@
             智能WIFI大数据平台
         </div>
         <div class="clearfix fr head-right">
-            <div class="fl times">
-                2018—12-04 18:24:32
+            <div class="fl times" id="times">
+
             </div>
             <div class="fl right-btns">
                 <span class="curr-user">当前账号</span>
@@ -69,8 +84,7 @@
                 <div class="hobby">
                     <div class="hobby_box">
                         <h3 class="h3-titel">应用偏好</h3>
-                        <div class="hobdy-dec">
-                            tubiao
+                        <div class="hobdy-dec" id="hobdy_dec">
                         </div>
                     </div>
 
@@ -82,112 +96,104 @@
                     <h3 class="h3-titel">
                         在岗分析
                     </h3>
-                    <ul class="clearfix">
-                        <li class="fl">
+                    <ul class="clearfix job-list">
+                        <li class="fl job-item1">
                             <h3>平均在岗时间</h3>
                             <p>6.8/h，上升2%</p>
                         </li>
-                        <li class="fl">
+                        <li class="fl job-item2">
                             <h3>平均在岗时间</h3>
                             <p>6.8/h，上升2%</p>
                         </li>
-                        <li class="fl">
+                        <li class="fl job-item3">
                             <h3>平均在岗时间</h3>
                             <p>6.8/h，上升2%</p>
                         </li>
                     </ul>
                 </div>
-                <div class="clearfix job-time">
-                    <div class="fl">
-                        <h3>在岗时长排行</h3>
-                        <ul class="progress">
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="fl">
-                        <h3>在岗时长排行</h3>
-                        <ul class="progress">
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                            <li class="bar">
-                                <span>王毅杜</span>
-                                <span></span>
-                                <span>9小时/天</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="job-time-box">
+                    <div class="clearfix job-time">
+                        <div class="fl col-6 time-list">
+                            <div class="time_box">
+                                <h3>在岗时长排行</h3>
+                                <ul class="progress">
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                </ul>
+                            </div>
 
+                        </div>
+                        <div class="fl col-6 time-list">
+                            <div class="time_box">
+                                <h3>在岗时长排行</h3>
+                                <ul class="progress">
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                    <li class="bar">
+                                        <span>王毅杜</span>
+                                        <span></span>
+                                        <span>9小时/天</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
+
                 <div class="point">
                     <h3 class="h3-titel">准点率排行</h3>
                     <ul class="progress">
                         <li class="bar">
                             <span>王毅杜</span>
-                            <span></span>
+                            <div class="layui-progress layui-progress-big">
+                                <div class="layui-progress-bar layui-bg-orange" lay-percent="50%"></div>
+                            </div>
                             <span>9小时/天</span>
                         </li>
-                        <li class="bar">
-                            <span>王毅杜</span>
-                            <span></span>
-                            <span>9小时/天</span>
-                        </li>
-                        <li class="bar">
-                            <span>王毅杜</span>
-                            <span></span>
-                            <span>9小时/天</span>
-                        </li>
-                        <li class="bar">
-                            <span>王毅杜</span>
-                            <span></span>
-                            <span>9小时/天</span>
-                        </li>
-                        <li class="bar">
-                            <span>王毅杜</span>
-                            <span></span>
-                            <span>9小时/天</span>
-                        </li>
+
                     </ul>
 
 
@@ -195,13 +201,21 @@
             </div>
             <div class="fl col-3  main-right">
                 <div class="area">
-                    <h3 class="h3-titel">准点率排行</h3>
-                    <div class="area-map">
-                        btbiao
+                    <div class="area_box">
+                        <h3 class="h3-titel">区域驻留</h3>
+                        <div class="area-map" id="area_map">
+
+                        </div>
                     </div>
-                    <div class="href-map">
-                        btbiao
+                    <div class="area_box">
+                        <h3 class="h3-titel">区域驻留</h3>
+                        <div class="area-map">
+
+                        </div>
                     </div>
+
+
+
 
                 </div>
                 <div>
@@ -211,11 +225,22 @@
         </div>
 
     </div>
-
 </body>
 <script src="js/jQuery-3.3.1.js"></script>
 <script src="js/echarts.min.js"></script>
 <!--星空背景-->
 <script type="text/javascript" src="js/starbg.js"></script>
+<script src="layui/layui.js"></script>
+<script src="js/public.js"></script>
+<script src="js/admin_msg.js"></script>
+<script>
+    //注意：选项卡 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+        var element = layui.element;
+
+        //…
+    });
+</script>
+
 
 </html>

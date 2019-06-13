@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无线拓展平面图</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/plan_map.css">
+
+</head>
+
+<body>
+    <canvas id="space"></canvas>
+    <!-- nav -->
+    <div class="nav">
+        <div class="nav-icon" id="nav_icon"></div>
+        <ul class="nav-list">
+            <li><a href="">大数据运算</a></li>
+            <li><a href="">大数据运算</a></li>
+            <li><a href="">大数据运算</a></li>
+            <li><a href="">大数据运算</a></li>
+            <li><a href="">大数据运算</a></li>
+        </ul>
+    </div>
+
+    <!-- header -->
+    <div class="clearfix header">
+        <div class="clearfix fl header-left">
+            <div class="fl left-item">
+                <h3>
+                    在线人数
+                </h3>
+                <div class="numbers">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                </div>
+            </div>
+
+            <div class="fl pelops">
+                总人数：126767/人
+            </div>
+
+        </div>
+        <div class="header-center">
+            智能WIFI大数据平台
+        </div>
+        <div class="clearfix fr head-right">
+            <div class="fl times" id="times">
+
+            </div>
+            <div class="fl right-btns">
+                <span class="curr-user">当前账号</span>
+                <span class="nub">18919300345</span>
+                <span class="set">关闭</span>
+                <span class="colse">关闭</span>
+            </div>
+        </div>
+    </div>
+    <div class="map_box">
+
+        <div class="map">
+            <div class=" map-item map1"></div>
+            <div class=" map-item map2"></div>
+            <div class=" map-item map3"></div>
+            <div class=" map-item map4"></div>
+            <div class=" map-item map5"></div>
+        </div>
+
+    </div>
+
+
+
+</body>
+<script src="js/jQuery-3.3.1.js"></script>
+
+<!--星空背景-->
+<script type="text/javascript" src="js/starbg.js"></script>
+<script src="js/public.js"></script>
+<script src="layui/layui.js"></script>
+<script>
+    layui.use(["layer", "element", "form"], function () {
+        var $ = layui.$;
+        var layer = layui.layer;
+        var rand = Math.round(Math.random() * 70 + 1030);
+        var tipsi;
+        $(".map div").each(function () {
+            $(this).hover(function () {
+                stips =
+                    `
+		 		<div class="hoverbox">
+                     <p>设备名称: Wa300-${rand}</p>
+                     <p>位置: 行政楼三楼</p>
+                     <p>连接人数:${rand} </p>
+                     <p>实时流量: ${rand}K</p>
+		 			
+		 			
+		 		</div>
+				
+		 		`;
+                tipsi = layer.tips(
+                    stips,
+                    this, {
+                        time: 0,
+                        tips: [2, 'rgba(0,56,133,0.8)'],
+                        area: ['200px', 'auto'],
+                        zIndex: 99999999
+                    }
+
+                );
+            }, function () {
+                layer.close(tipsi);
+            });
+        })
+
+
+
+    });
+</script>
+
+
+</html>
