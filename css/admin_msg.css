@@ -1,1 +1,25 @@
-null
+.header {
+  background: url(../images/header_bg.png) no-repeat center center; }
+
+.main-center .job .job-list {
+  padding: 0 5%; }
+  .main-center .job .job-list li {
+    position: relative;
+    width: 33.33%;
+    height: 226px; }
+    .main-center .job .job-list li h3 {
+      text-align: center;
+      line-height: 56px; }
+    .main-center .job .job-list li p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 56px; }
+  .main-center .job .job-list .job-item1 {
+    background: url(../images/job3.png) no-repeat center center; }
+  .main-center .job .job-list .job-item2 {
+    background: url(../images/job2.png) no-repeat center center; }
+  .main-center .job .job-list .job-item3 {
+    background: url(../images/job1.png) no-repeat center center; }

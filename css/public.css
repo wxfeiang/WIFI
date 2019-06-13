@@ -105,3 +105,25 @@ body {
         color: #FFF; }
   .main .main-box .main-left .hobby {
     background: #042878; }
+
+.nav {
+  position: fixed;
+  left: 2%;
+  top: 5%;
+  z-index: 10; }
+  .nav .nav-icon {
+    width: 34px;
+    height: 28px;
+    background: url(../images/nav.png) no-repeat;
+    cursor: pointer; }
+  .nav .nav-list {
+    display: none;
+    padding: 10px;
+    width: 120px;
+    background: #00082c; }
+    .nav .nav-list li a {
+      display: inline-block;
+      line-height: 26px;
+      color: #1890ff; }
+      .nav .nav-list li a:hover {
+        color: #fff; }

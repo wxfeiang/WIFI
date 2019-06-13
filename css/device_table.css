@@ -1,0 +1,13 @@
+body {
+  background: #000932; }
+
+.tableb_box {
+  margin: 100px auto 0;
+  width: 1062px; }
+  .tableb_box table {
+    box-sizing: border-box;
+    border: 1px solid #727375;
+    color: #fff; }
+    .tableb_box table tbody tr td {
+      text-align: center;
+      line-height: 30px; }
