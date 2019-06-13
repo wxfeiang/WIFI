@@ -1,54 +1,118 @@
-.bg-opcity, .main-center .job-time-box .job-time .time-list .time_box {
-  background: rgba(4, 40, 120, 0.3); }
+.bg-opcity, .main-center .job-time-box .job-time .time-list .time_box, .main-center .point .point_box {
+  background: rgba(4, 40, 120, 0.3);
+}
 
 .header {
-  background: url(../images/header_bg.png) no-repeat center center; }
+  background: url(../images/header_bg.png) no-repeat center center;
+}
 
 .main-left .hobby_box {
   padding: 0 20px;
-  box-sizing: border-box; }
-  .main-left .hobby_box .hobdy-dec {
-    width: 100%;
-    height: 450px; }
+  box-sizing: border-box;
+}
+
+.main-left .hobby_box .hobdy-dec {
+  width: 100%;
+  height: 450px;
+}
 
 .main-center .job .h3-titel {
-  padding: 0 0 0 20px; }
+  padding: 0 0 0 20px;
+}
 
 .main-center .job .job-list {
-  padding: 22px 5%  30px; }
-  .main-center .job .job-list li {
-    position: relative;
-    width: 33.33%;
-    height: 226px; }
-    .main-center .job .job-list li h3 {
-      text-align: center;
-      line-height: 56px;
-      font-size: 20px;
-      font-family: Alibaba-PuHuiTi-R;
-      font-weight: 400;
-      color: white; }
-    .main-center .job .job-list li p {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      line-height: 56px;
-      font-size: 18px;
-      font-family: Alibaba-PuHuiTi-B;
-      font-weight: bold;
-      color: white; }
-  .main-center .job .job-list .job-item1 {
-    background: url(../images/job3.png) no-repeat center center; }
-  .main-center .job .job-list .job-item2 {
-    background: url(../images/job2.png) no-repeat center center; }
-  .main-center .job .job-list .job-item3 {
-    background: url(../images/job1.png) no-repeat center center; }
+  padding: 22px 5%  30px;
+}
+
+.main-center .job .job-list li {
+  position: relative;
+  width: 33.33%;
+  height: 226px;
+}
+
+.main-center .job .job-list li h3 {
+  text-align: center;
+  line-height: 56px;
+  font-size: 20px;
+  font-family: Alibaba-PuHuiTi-R;
+  font-weight: 400;
+  color: white;
+}
+
+.main-center .job .job-list li p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 56px;
+  font-size: 18px;
+  font-family: Alibaba-PuHuiTi-B;
+  font-weight: bold;
+  color: white;
+}
+
+.main-center .job .job-list .job-item1 {
+  background: url(../images/job3.png) no-repeat center center;
+}
+
+.main-center .job .job-list .job-item2 {
+  background: url(../images/job2.png) no-repeat center center;
+}
+
+.main-center .job .job-list .job-item3 {
+  background: url(../images/job1.png) no-repeat center center;
+}
 
 .main-center .job-time-box {
-  padding: 20px 0 0 0; }
-  .main-center .job-time-box .job-time {
-    box-sizing: border-box;
-    margin: -10px; }
-    .main-center .job-time-box .job-time .time-list .time_box {
-      padding: 10px; }
+  padding: 20px 0 0 0;
+}
+
+.main-center .job-time-box .job-time {
+  box-sizing: border-box;
+  margin: -10px;
+}
+
+.main-center .job-time-box .job-time .time-list .time_box {
+  padding: 10px;
+}
+
+.main-center .job-time-box .job-time .time-list .time_box .progress .bar span {
+  display: inline-block;
+  width: 15%;
+  height: 14px;
+}
+
+.main-center .job-time-box .job-time .time-list .time_box .progress .bar .dy-pro {
+  display: inline-block;
+  width: 60%;
+}
+
+.main-center .point {
+  padding: 20px 0 0 0;
+}
+
+.main-center .point .point_box {
+  padding: 10px;
+}
+
+.main-center .point .point_box h3 {
+  padding: 0 0 0 20px;
+}
+
+.progress .bar span {
+  display: inline-block;
+  width: 10%;
+  height: 14px;
+  font-size: 12px;
+}
+
+.progress .bar .dy-pro {
+  display: inline-block;
+  width: 75%;
+  background: #0c3b89;
+}
+
+.progress .bar .dy-pro .dy-bar {
+  background: linear-gradient(90deg, #0055bc 0%, #0082be 100%);
+}
