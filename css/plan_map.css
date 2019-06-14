@@ -1,31 +1,25 @@
 body {
-  background: #00082c;
-}
+  background: #00082c; }
 
 .h3-title {
-  color: #fff;
-}
+  color: #fff; }
 
 .map {
-  margin: 26px auto 0;
+  margin: 20px auto 0;
   position: relative;
   width: 98%;
   height: 790px;
-  background: url(../images/map1.jpg) no-repeat center center;
-}
+  background: url(../images/map1.jpg) no-repeat center center; }
 
-.map {
-  margin: 26px auto 0;
+.mapt {
+  margin: 20px auto 0;
   position: relative;
   width: 98%;
   height: 790px;
-  background: url(../images/map2.jpg) no-repeat center center;
-}
-
-.map .map1 {
-  left: 30.5%;
-  top: 50.5%;
-}
+  background: url(../images/map2.jpg) no-repeat center center; }
+  .mapt .map1 {
+    left: 30.5%;
+    top: 50.5%; }
 
 .map-item {
   position: absolute;
@@ -33,30 +27,24 @@ body {
   width: 20px;
   background: red;
   border-radius: 50%;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .map1 {
   left: 30.5%;
-  top: 18.5%;
-}
+  top: 18.5%; }
 
 .map2 {
   left: 60.5%;
-  top: 45.5%;
-}
+  top: 45.5%; }
 
 .map3 {
   left: 50.5%;
-  top: 50.5%;
-}
+  top: 50.5%; }
 
 .map4 {
   left: 60.5%;
-  top: 60.5%;
-}
+  top: 60.5%; }
 
 .map5 {
   left: 35.5%;
-  top: 50.5%;
-}
+  top: 50.5%; }

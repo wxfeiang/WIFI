@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>管理员个人信息分析</title>
-    <link rel="stylesheet" href="layui/css/layui.css">
-    <link rel="stylesheet" href="css/rest.css">
-    <link rel="stylesheet" href="css/public.css">
-    <link rel="stylesheet" href="css/admin_msg.css">
+    <link rel="stylesheet" href="layui/css/layui.css" />
+    <link rel="stylesheet" href="css/rest.css" />
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/admin_msg.css" />
 </head>
 
 <body>
-
     <canvas id="space"></canvas>
 
     <!-- nav -->
@@ -48,20 +47,17 @@
             <div class="fl pelops">
                 总人数：126767/人
             </div>
-
         </div>
         <div class="header-center">
             智能WIFI大数据平台
         </div>
         <div class="clearfix fr head-right">
-            <div class="fl times" id="times">
-
-            </div>
+            <div class="fl times" id="times"></div>
             <div class="fl right-btns">
                 <span class="curr-user">当前账号</span>
                 <span class="nub">18919300345</span>
-                <span class="set">关闭</span>
-                <span class="colse">关闭</span>
+                <span class="set"></span>
+                <span class="colse"></span>
             </div>
         </div>
     </div>
@@ -78,18 +74,14 @@
                     <p>终端MAC：<span>EE-EE-GF-WR</span></p>
                     <p>终端类型：<span>苹果移动终端</span></p>
                     <p>最近接入时间：<span>2019-05-21 14:21:36</span></p>
-                    <p>最近接入地点：<span>三楼办公区东侧
-                        </span></p>
+                    <p>最近接入地点：<span>三楼办公区东侧 </span></p>
                 </div>
                 <div class="hobby">
                     <div class="hobby_box">
                         <h3 class="h3-titel">应用偏好</h3>
-                        <div class="hobdy-dec" id="hobdy_dec">
-                        </div>
+                        <div class="hobdy-dec" id="hobdy_dec"></div>
                     </div>
-
                 </div>
-
             </div>
             <div class="fl col-6  main-center">
                 <div class="job">
@@ -115,8 +107,8 @@
                     <div class="clearfix job-time">
                         <div class="fl col-6 time-list">
                             <div class="time_box">
-                                <h3>在岗时长排行</h3>
-                                <ul class="progress">
+                                <h3 class="h3-titel">在岗时长排行</h3>
+                                <ul class="progress datas">
                                     <li class="bar">
                                         <span>王毅杜</span>
                                         <div class="layui-progress dy-pro">
@@ -152,14 +144,12 @@
                                         </div>
                                         <span>9h/天</span>
                                     </li>
-
                                 </ul>
                             </div>
-
                         </div>
                         <div class="fl col-6 time-list">
                             <div class="time_box">
-                                <h3>在岗时长排行</h3>
+                                <h3 class="h3-titel">在岗时长排行</h3>
                                 <ul class="progress">
                                     <li class="bar">
                                         <span>王毅杜</span>
@@ -196,12 +186,9 @@
                                         </div>
                                         <span>80%</span>
                                     </li>
-
                                 </ul>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
 
@@ -244,40 +231,27 @@
                                 </div>
                                 <span>80%</span>
                             </li>
-
-
                         </ul>
-
                     </div>
-
-
                 </div>
             </div>
             <div class="fl col-3  main-right">
                 <div class="area">
                     <div class="area_box">
-                        <h3 class="h3-titel">区域驻留</h3>
-                        <div class="area-map" id="area_map">
-
-                        </div>
-                    </div>
-                    <div class="area_box">
-                        <h3 class="h3-titel">区域驻留</h3>
-                        <div class="area-map">
-
-                        </div>
+                        <h3 class="h3-titel">热门区域</h3>
+                        <div class="area-map" id="area_map"></div>
                     </div>
 
-
-
-
+                    <div class="area-2">
+                        <div class="area_box2">
+                            <h3 class="h3-titel">区域驻留</h3>
+                            <div class="area-map2" id="area_map2"></div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-
-                </div>
+                <div></div>
             </div>
         </div>
-
     </div>
 </body>
 <script src="js/jQuery-3.3.1.js"></script>
@@ -289,12 +263,11 @@
 <script src="js/admin_msg.js"></script>
 <script>
     //注意：选项卡 依赖 element 模块，否则无法进行功能性操作
-    layui.use('element', function () {
+    layui.use("element", function () {
         var element = layui.element;
 
         //…
     });
 </script>
-
 
 </html>

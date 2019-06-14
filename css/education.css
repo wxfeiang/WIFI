@@ -1,0 +1,117 @@
+.bg-opcity, .hobby_box, .internet .internet-box, .visitor-main .visitor, .temial .temial_box, .gather .gather_box, .edu_map, .school_box {
+  background: rgba(4, 40, 120, 0.3); }
+
+.edu_img_box .edu_img img {
+  width: 100%; }
+
+.hobby_box .tab-h3 span {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+  line-height: 36px; }
+
+.hobby_box .tab_cont {
+  height: 220px; }
+  .hobby_box .tab_cont .cnter_box {
+    display: none; }
+    .hobby_box .tab_cont .cnter_box .rank {
+      height: 180px; }
+
+.internet {
+  padding: 10px  0 0 0; }
+  .internet .internet-box h3 {
+    line-height: 30px;
+    font-size: 18px;
+    font-family: Alibaba-PuHuiTi-R;
+    font-weight: 400;
+    color: #0074f5;
+    opacity: 0.8;
+    background: linear-gradient(0deg, #bafdff 0%, #59dcff 34.69238%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .internet .internet-box .internet_map {
+    height: 220px; }
+
+.visitor-main {
+  padding: 10px 0 0 0; }
+  .visitor-main .visitor {
+    padding: 10px 0 0 0; }
+    .visitor-main .visitor .visitor_box {
+      display: none;
+      padding: 0 0 0 20px;
+      box-sizing: border-box; }
+
+.tab-h3 span {
+  display: inline-block; }
+
+.tab-h3 .tab-spa1 {
+  color: #ffffff;
+  text-align: center;
+  width: 152px;
+  height: 28px;
+  line-height: 28px;
+  background: url("../../images/z2.png") no-repeat center center; }
+
+.tab-h3 .tab-spa2 {
+  margin: 0 0 0 -18px;
+  color: #0078FF;
+  text-align: center;
+  width: 152px;
+  height: 28px;
+  line-height: 28px;
+  background: url("../../images/z1.png") no-repeat center center; }
+
+.progress {
+  margin: 10px 0 0 0;
+  box-sizing: border-box; }
+  .progress .bar {
+    line-height: 35px; }
+    .progress .bar span {
+      display: inline-block;
+      width: 10%;
+      font-size: 12px; }
+    .progress .bar .dy-pro {
+      display: inline-block;
+      width: 75%;
+      background: #0c3b89;
+      height: 10px; }
+      .progress .bar .dy-pro .dy-bar {
+        background: linear-gradient(90deg, #0055bc 0%, #0082be 100%);
+        height: 10px; }
+
+.jobs1 {
+  width: 100%;
+  height: 198px;
+  background: url("../images/jobs1.jpg") no-repeat center center;
+  background-size: 100% 100%; }
+
+.temial {
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
+  height: 330px; }
+  .temial .temial_box h3 {
+    padding: 0 0 0 20px; }
+  .temial .temial_box .temial_map {
+    width: 100%;
+    height: 252px; }
+
+.gather {
+  padding: 20px 0 0 0;
+  height: 258px;
+  box-sizing: border-box; }
+  .gather .gather_box h3 {
+    padding: 0 0 0 20px; }
+  .gather .tab_cont {
+    height: 213px; }
+  .gather #area_map2 {
+    width: 100%;
+    height: 200px; }
+
+.edu_map .edu_map_box {
+  height: 594px;
+  background: url("../images/gansu.png") no-repeat center center; }
+
+.school_box .school_img {
+  height: 594px;
+  background: url("../images/lanzhou.png") no-repeat center center; }

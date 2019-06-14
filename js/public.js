@@ -24,3 +24,8 @@ function autoPlay() {
 function toTwo(date) {
     return date < 10 ? "0" + date : date;
 }
+// 刷新
+$(".set").click(function () {
+    window.location.reload();
+
+})

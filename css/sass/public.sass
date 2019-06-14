@@ -1,5 +1,11 @@
 .bg-opcity
     background: rgba(4,40,120,0.3)
+
+// @font-face 
+//     font-family: baidu
+//     src: url('../font/BaiduZYJT.ttf')format('truetype')
+
+ 
 #space 
     position: absolute 
     width: 100% 
@@ -22,8 +28,6 @@ body
     -webkit-background-clip: text  
     -webkit-text-fill-color: transparent  
 .header
-    background: url(../images/header_bg.png) no-repeat center center
-    //background: linear-gradient(0deg,rgba(0,116,245,0.7) 0%,rgba(0,116,245,0) 100%)
     padding: 17px 0 0 0 
     .header-left
         width: 33.5%
@@ -63,14 +67,16 @@ body
     .header-center
         position: absolute
         width: 100%
-        height: 38px
+        height: 80px
+        top: 0
         text-align: center
         font-size: 38px  
-        font-family: MStiffHeiPRC-UltraBold  
+        font-family: "baidu" 
         font-weight: 800  
         color: rgba(255,255,255,1)  
-        line-height: 38px  
+        line-height: 80px  
         z-index: -1
+        background: url(../images/header_bg.png) no-repeat center center
     .head-right
         padding: 20px 0 0 0 
         .times
@@ -79,9 +85,12 @@ body
             font-weight: 300  
             color: rgba(255,255,255,1)  
             line-height: 28px 
+            margin: 0 20px 0 0
         .right-btns
+            padding:  0 30px 0 0
             span
                 display: inline-block
+                margin:  0 5px
             .curr-user 
                 width: 85px
                 height: 26px
@@ -104,6 +113,18 @@ body
                 color: rgba(254,254,255,1)  
                 line-height: 28px  
                 background: url(../images/cuur2.png) no-repeat 
+            .set
+                width: 20px
+                height: 25px
+                cursor: pointer
+                background: url(../images/refush.png) no-repeat  center center
+                vertical-align: middle
+            .colse
+                width: 20px
+                height: 25px
+                cursor: pointer
+                background: url(../images/close.png) no-repeat  center center
+                vertical-align: middle
 
 .main
     width: 98%
@@ -133,14 +154,25 @@ body
                 @extend .bg-opcity
         .main-right
             .area
-                @extend .bg-opcity
+                
                 .area_box
                     padding: 0 0 0 20px
-                    h3
-                        
+                    @extend .bg-opcity
+                    height: 340px
+                    h3 
                     .area-map
                         width: 100%
-                        height: 300px
+                        height: 250px
+            .area-2
+                padding: 20px 0 0 0
+                .area_box2
+                    height: 460px
+                    @extend .bg-opcity
+                    h3
+                        padding: 0 0 0 20px
+                    .area-map2
+                        width: 100%
+                        height: 400px
 
 
             
@@ -180,14 +212,14 @@ body
     /*滚动条里面小方块*/
     border-radius: 10px 
     -webkit-box-shadow: inset 0 0 5px rgba(4,40,120,0.3)
-    background: #ccc 
+    background: 5px rgba(4,40,120,0.3)
  
 
 ::-webkit-scrollbar-track  
     /*滚动条里面轨道*/
     -webkit-box-shadow: inset 0 0 5px rgba(4,40,120,0.3)
     border-radius: 10px 
-    background: #EDEDED 
+    background: rgba(4,40,120,0.3)
  
 
             

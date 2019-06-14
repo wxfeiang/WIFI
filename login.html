@@ -27,7 +27,7 @@
                     <input type="password" name="password" placeholder="请输入密码" required lay-verify="required">
                 </div>
                 <div class="btn">
-                    <button type="button" lay-submit lay-filter="Login">
+                    <button type="button" lay-submit lay-filter="Login" id="btn">
                         立即登录
                     </button>
                 </div>
@@ -36,26 +36,42 @@
     </div>
 </body>
 <script src="layui/layui.js"></script>
+<script src="data/data.js"></script>
 <script>
+    // 基础数据
+    var dataJson = {
+        // 教育局大数据展示账号
+        "juj_admin": {
+            "url": "manager_education.html"
+        },
+
+        // 教育局个人分析页面
+        "juj_person": {
+            "url": "analysis_education.html"
+        },
+
+        // 学校大数据展示页面
+        "xx_admin": {
+            "url": "manager_school.html"
+        },
+        // 学校个人分析页面
+        "xx_person": {
+            "url": "analysis_school.html"
+        }
+    }
+
     layui.use(["layer", "element", "form"], function () {
         var $ = layui.$;
         var layer = layui.layer;
         var form = layui.form;
 
-
-
-        //监听提交
+        // 用户登录
         form.on("submit(Login)", function (data) {
+            var username = data.field.user;
+            console.log(dataJson[username])
+            location.replace(dataJson[username].url);
 
-            console.log(data.field);
-            // send
-            // layer.msg(res.msg, {
-            //     icon: 5,
-            //     anim: 6
-            // });
             return false;
-
-
         });
 
 
